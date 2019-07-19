@@ -10094,6 +10094,10 @@ a.text-dark:hover, a.text-dark:focus {
   top: -2px;
 }
 
+.scoreboard-winner {
+  font-weight: 500;
+}
+
 .scoreboard-right {
   padding: 0px;
 }
@@ -10291,5 +10295,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sponsor {
   width: 200px;
+  padding: 20px;
+}
+
+.article-image {
+  float: right;
+  max-width: 600px;
   padding: 20px;
 }
