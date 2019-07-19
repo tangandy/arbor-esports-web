@@ -4581,7 +4581,7 @@ input[type="button"].btn-block {
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  /* padding: 1.25rem; */
 }
 
 .card-title {
@@ -6239,7 +6239,7 @@ a.close.disabled {
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
+  /* margin-right: -100%; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: -webkit-transform 0.6s ease-in-out;
@@ -10087,7 +10087,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0px;
 }
 
-.scoreboard-team1 img {
+.scoreboard-winner img, .scoreboard-loser img {
   width: 16px;
   height: 16px;
   position: relative;
@@ -10113,4 +10113,183 @@ a.text-dark:hover, a.text-dark:focus {
 .carousel-item img {
   width: 1000px;
   height: 600px;
+}
+
+.card-img-top {
+  max-width: 100px;
+  max-height: 100px;
+  filter: brightness(0);
+  margin: auto;
+}
+
+.card-img-top:hover {
+  filter: none;
+}
+
+.header-image:hover {
+  filter: drop-shadow(16px 16px 20px blue);
+}
+
+.scoreboard:hover {
+  border-color: #ffe484;
+  background-color: white;
+}
+
+.card-title:hover {
+  color: #00274c;
+}
+
+.card {
+  background-color: #f7f7f7;
+}
+
+.card:hover {
+  background-color: white;
+  border-color: #ffe484;
+}
+
+/* Test Carousel */
+
+/* Tablet and up */
+
+@media screen and (min-width: 768px) {
+  .carousel-inner .active,
+  .carousel-inner .active+.carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* Desktop and up */
+
+@media screen and (min-width: 992px) {
+  .carousel-inner .active,
+  .carousel-inner .active+.carousel-item,
+  .carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left+.carousel-item,
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right+.carousel-item,
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+.scoreboard-game-image {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.scoreboard-team-logo{
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.scoreboard-row {
+  margin: 0px;
+}
+
+.arrow-image {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.arrow-image:hover {
+  filter: opacity(50%);
+}
+
+.sponsor {
+  width: 200px;
+  padding: 20px;
 }
