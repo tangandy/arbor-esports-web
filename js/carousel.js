@@ -1,9 +1,9 @@
 (function ($) {
   "use strict";
   // Auto-scroll
-  $('#myCarousel').carousel({
-    interval: 5000
-  });
+  // $('#myCarousel').carousel({
+  //   interval: 5000
+  // });
 
   // Control buttons
   $('.next').click(function () {

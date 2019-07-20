@@ -1,0 +1,181 @@
+header {
+  overflow-x: hidden;
+}
+
+.bd-navbar {
+    min-height: 4rem;
+    background-color: #081a41;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.bd-navbar .navbar-nav .nav-link.active, .bd-navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-bd-download {
+    font-weight: 600;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+
+.btn-bd-download:hover{
+  background-color: #ffe484;
+}
+
+.bd-footer {
+  background-color: #f7f7f7;
+}
+
+.scoreboard {
+  border-style: outset;
+  border-color: white;
+  color: black;
+  border-width: thin;
+}
+
+.scoreboard-game {
+  padding: 0px;
+}
+
+.scoreboard-game img {
+  max-width: 60px;
+  max-height: 60px
+}
+
+.team {
+  background-color: #f7f7f7;
+  height: 400px;
+}
+
+.bd-footer-p {
+  margin: 0px;
+}
+
+.scoreboard-winner img, .scoreboard-loser img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -2px;
+}
+
+.scoreboard-winner {
+  font-weight: 500;
+}
+
+.scoreboard-loser {
+  color: #6c757d !important;
+}
+
+.scoreboard-right {
+  padding: 0px;
+}
+
+.nav-link img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.alignright {
+  float: right;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.carousel-item img {
+  width: 1000px;
+  height: 600px;
+}
+
+.card-img-top {
+  max-width: 100px;
+  max-height: 100px;
+  filter: brightness(0);
+  margin: auto;
+}
+
+.card-img-top:hover {
+  filter: none;
+}
+
+.header-image:hover {
+  filter: drop-shadow(16px 16px 20px blue);
+}
+
+.scoreboard:hover {
+  border-color: #ffe484;
+  background-color: white;
+}
+
+.card-title:hover {
+  color: #00274c;
+}
+
+.card {
+  background-color: #f7f7f7;
+}
+
+.card:hover {
+  background-color: white;
+  border-color: #ffe484;
+}
+
+.scoreboard-game-image {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.scoreboard-team-logo{
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.scoreboard-row {
+  margin: 0px;
+}
+
+.arrow-image {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.arrow-image:hover {
+  filter: opacity(50%);
+}
+
+.sponsor {
+  width: 200px;
+  padding: 20px;
+}
+
+.article-image-container{
+  float: right;
+}
+
+.article-image {
+  float: right;
+  max-width: 100%;
+}
+
+.scoreboard-right p {
+  float: right;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.intro-picture {
+  width: 100%;
+}
+
+@media {
+  .scoreboard-right {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scoreboard-right {
+    padding-left: 0px;
+  }
+}

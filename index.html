@@ -4,213 +4,203 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Arbor Esports</title>
   </head>
+
   <body>
 
-    <!-- Navbar -->
-
-    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-      <a class="navbar-brand mr-0 mr-md-2" href="#">
-        <img src="images/arbor-esports-icon.jpg" class="d-inline-block align-top" alt="">
-      </a>
-      <div class="navbar-nav-scroll">
-        <ul class="navbar-nav bd-navbar-nav flex-row">
+    <header>
+      <!-- NAVBAR -->
+      <!-- left navs -->
+      <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <a class="navbar-brand mr-0 mr-md-2" href="#">
+          <img src="images/arbor-esports-icon.jpg" class="d-inline-block align-top" alt="">
+        </a>
+        <div class="navbar-nav-scroll">
+          <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Members</a>
+            </li>
+          </ul>
+        </div>
+        <!-- right navs -->
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <li class="nav-item">
-            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/github.png" alt=""></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">News</a>
+            <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/facebook.png" alt=""></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Community</a>
+            <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/twitter.png" alt=""></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Teams</a>
+            <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/twitch.png" alt=""></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Members</a>
+            <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/discord.png" alt=""></a>
           </li>
         </ul>
-      </div>
-      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-        <li class="nav-item">
-          <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/github.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/facebook.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/twitter.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/twitch.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2" href="/"><img class="header-image" src="images/header/discord.png" alt=""></a>
-        </li>
-      </ul>
-      <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Contact</a>
-    </nav>
-
-    <!-- Scoreboard Carousel -->
-
-    <div class="container-fluid my-2">
-    <div class="row">
-      <a class="btn col-1 prev d-flex flex-wrap align-items-center justify-content-end">
-        <i class="fa fa-lg fa-chevron-left"></i>
-        <img class="arrow-image" src="images/other/prev.png" alt="">
-      </a>
-      <div class="container col-10">
-        <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+        <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Contact</a>
+      </nav>
+      <!-- SCOREBOARD -->
+      <!-- TODO try to fix small scoreboard -->
+      <nav class="row my-2 px-2">
+        <!-- previous button -->
+        <a class="btn col-2 col-md-1 prev d-flex flex-wrap align-items-center justify-content-end">
+          <img class="arrow-image" src="images/other/prev.png" alt="">
+        </a>
+        <!-- carousel -->
+        <div id="myCarousel" class="carousel slide col-8 col-md-10" data-interval="false" data-ride="carousel">
           <div class="carousel-inner row w-100 mx-auto">
-            <div class="carousel-item col-md-4 active">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        UM
-                        <p class="alignright">2</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted">
-                        <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
-                        OSU
-                        <p class="alignright">0</p>
-                      </div>
+            <!-- carousel items -->
+            <div class="carousel-item col-6 col-md-6 col-lg-4 active">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item col-md-4">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/league.png" alt="LoL"></div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        UM
-                        <p class="alignright">200000</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan-state.png" alt="">
-                        MSU
-                        <p class="alignright">0</p>
-                      </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan-state.png" alt="">
+                      MSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item col-md-4">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/melee.png" alt=""></div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner text-truncate">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        KJH
-                        <p class="alignright">3</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted text-truncate">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        Ginger
-                        <p class="alignright">2</p>
-                      </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item col-md-4">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/overwatch.png" alt="OW"></div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        UM
-                        <p class="alignright">2</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan-state.png" alt="">
-                        MSU
-                        <p class="alignright">0</p>
-                      </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item col-md-4">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/r6.png" alt="Dota 2"> </div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        UM
-                        <p class="alignright">2</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted">
-                        <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
-                        OSU
-                        <p class="alignright">0</p>
-                      </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item col-md-4">
-              <div class="card">
-                <div class="scoreboard">
-                  <div class="scoreboard-row row">
-                    <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/hearthstone.png" alt="HS"></div>
-                    <div class="scoreboard-right col-8 py-1">
-                      <div class="scoreboard-winner">
-                        <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                        UM
-                        <p class="alignright">2</p>
-                      </div>
-                      <div class="scoreboard-loser text-muted">
-                        <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
-                        OSU
-                        <p class="alignright">0</p>
-                      </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
-                </div>
               </div>
-              <div class="carousel-item col-md-4">
-                <div class="card">
-                  <div class="scoreboard">
-                    <div class="scoreboard-row row">
-                      <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/rl.png" alt="RL"></div>
-                      <div class="scoreboard-right col-8 py-1">
-                        <div class="scoreboard-winner">
-                          <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                          UM
-                          <p class="alignright">2</p>
-                        </div>
-                        <div class="scoreboard-loser text-muted">
-                          <img class="scoreboard-team-logo" src="images/school-logos/default.png" alt="">
-                          EX
-                          <p class="alignright">0</p>
-                        </div>
-                      </div>
+            </div>
+            <div class="carousel-item col-6 col-md-6 col-lg-4">
+              <div class="scoreboard card">
+                <div class="scoreboard-row row">
+                  <div class="scoreboard-game col-md-4 text-center d-none d-md-block"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
+                  <div class="scoreboard-right col-12 col-md-8 py-1">
+                    <div class="scoreboard-winner">
+                      <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
+                      UM
+                      <p>2</p>
+                    </div>
+                    <div class="scoreboard-loser">
+                      <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
+                      OSU
+                      <p>0</p>
                     </div>
                   </div>
                 </div>
@@ -218,191 +208,73 @@
             </div>
           </div>
         </div>
-        <a class="btn col-1 next d-flex flex-wrap align-items-center">
-          <i class="fa fa-lg fa-chevron-right"></i>
+        <!-- next button -->
+        <a class="btn col-2 col-md-1 next d-flex flex-wrap align-items-center">
           <img class="arrow-image" src="images/other/next.png" alt="">
         </a>
-      </div>
-    </div>
-    </div>
-
-    <!-- Scoreboard -->
-
-    <!-- <div class="container-fluid">
-      <div class="row" style="background-color: #f7f7f7">
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/dota.png" alt="Dota 2"> </div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                UM
-                <p class="alignright">2</p>
-              </div>
-              <div class="scoreboard-loser text-muted">
-                <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
-                OSU
-                <p class="alignright">0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/league.png" alt="LoL"></div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                UM
-                <p class="alignright">200000</p>
-              </div>
-              <div class="scoreboard-loser text-muted">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan-state.png" alt="">
-                MSU
-                <p class="alignright">0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/melee.png" alt=""></div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner text-truncate">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                KJH
-                <p class="alignright">3</p>
-              </div>
-              <div class="scoreboard-loser text-muted text-truncate">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                Ginger
-                <p class="alignright">2</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/overwatch.png" alt="OW"></div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                UM
-                <p class="alignright">2</p>
-              </div>
-              <div class="scoreboard-loser text-muted">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan-state.png" alt="">
-                MSU
-                <p class="alignright">0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/hearthstone.png" alt="HS"></div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                UM
-                <p class="alignright">2</p>
-              </div>
-              <div class="scoreboard-loser text-muted">
-                <img class="scoreboard-team-logo" src="images/school-logos/ohio-state.png" alt="">
-                OSU
-                <p class="alignright">0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="scoreboard col-2">
-          <div class="row">
-            <div class="scoreboard-game col-4 text-center justify-content-center"> <img class="scoreboard-game-image" src="images/game-logos/rl.png" alt="RL"></div>
-            <div class="scoreboard-right col-8 py-1">
-              <div class="scoreboard-winner">
-                <img class="scoreboard-team-logo" src="images/school-logos/michigan.png" alt="">
-                UM
-                <p class="alignright">2</p>
-              </div>
-              <div class="scoreboard-loser text-muted">
-                <img class="scoreboard-team-logo" src="images/school-logos/default.png" alt="">
-                EX
-                <p class="alignright">0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Intro -->
-
-    <div class="container">
+      </nav>
+    </header>
+    <!-- INTRO -->
+    <main class="container text-center">
       <div class="col-md mx-auto">
-        <img src="images/arbor-esports.png" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/arbor-esports.png">
+          <source media="(min-width: 992px)" srcset="images/arbor-esports.png">
+          <source media="(min-width: 768px)" srcset="images/arbor-esports.png">
+          <source media="(min-width: 576px)" srcset="images/arbor-esports-logo.png">
+          <source media="(max-width: 575px)" srcset="images/arbor-esports-logo.png">
+          <img class="intro-picture" src="/images/arbor-esports.png" alt="">
+        </picture>
       </div>
       <div class="col-md text-center text-md-left">
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </div>
-
-    <!-- Games -->
-
-    <div class="container-fluid mt-5" style="background-color: #081a41;">
+    </main>
+    <!-- GAMES -->
+    <nav class="container-fluid mt-5" style="background-color: #081a41;">
+      <!-- cards are not responsive in bootstrap v4.0, jank solution with visibility on screen size -->
       <div class="card-group py-5 text-center">
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-sm-block">
           <img class="card-img-top" src="images/game-logos/dota.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">DOTA 2</h5>
-          </div>
+          <h5 class="card-title">DOTA 2</h5>
         </div>
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-sm-block">
           <img class="card-img-top" src="images/game-logos/overwatch.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Overwatch</h5>
+          <h5 class="card-title">Overwatch</h5>
           </div>
         </div>
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-md-block">
           <img class="card-img-top" src="images/game-logos/league.png" alt="Card image cap">
-          <div class="card-body">
             <h5 class="card-title">LoL</h5>
-          </div>
         </div>
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-md-block">
           <img class="card-img-top" src="images/game-logos/csgo.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">CS:GO</h5>
-          </div>
+          <h5 class="card-title">CS:GO</h5>
         </div>
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-lg-block">
           <img class="card-img-top" src="images/game-logos/melee.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Melee</h5>
-          </div>
+          <h5 class="card-title">Melee</h5>
         </div>
-        <div class="card col-2">
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12 d-none d-lg-block">
+          <img class="card-img-top" src="images/game-logos/sc2.png" alt="Card image cap">
+          <h5 class="card-title">Starcraft 2</h5>
+        </div>
+        <div class="card col-lg-2 col-md-3 col-sm-6 col-12">
           <img class="card-img-top" src="images/game-logos/more.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">All Games</h5>
-          </div>
+          <h5 class="card-title">All Games</h5>
         </div>
       </div>
-    </div>
-
-    <!-- News -->
-
-    <div class="container py-5">
-      <h1>Example Article</h1>
-      <img class="article-image" src="images/example-image.jpg" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <button type="button" class="btn btn-primary">Blog</button>
-    </div>
-
-    <!-- Sponsors -->
-
-    <div class="container-fluid py-5 bg-light">
+    </nav>
+    <!-- NEWS -->
+    <article>
+      <!-- TODO -->
+    </article>
+    <section>
+      <!-- TODO -->
+    </section>
+    <!-- SPONSORS -->
+    <aside class="container-fluid py-5 bg-light">
       <div class="container mx-auto text-center">
         <h5>Arbor Esports is proudly sponsored by</h5>
         <div class="row justify-content-center">
@@ -411,23 +283,20 @@
           <img class="sponsor" src="images/sponsors/turtle-beach.png" alt="">
         </div>
       </div>
-    </div>
-
-    <!-- Footer -->
-
+    </aside>
+    <!-- FOOTER -->
     <footer class="bd-footer text-muted" style="background-color: #081a41;">
       <div class="container-fluid p-3 p-md-5">
         <p class="bd-footer-p">University of Michigan, Ann Arbor.</p>
         <p class="bd-footer-p">Currently v1.0. Code licensed MIT.</p>
       </div>
     </footer>
+    <!-- SCRIPTS -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/carousel.js"></script>
-
-    </script>
   </body>
 </html>
